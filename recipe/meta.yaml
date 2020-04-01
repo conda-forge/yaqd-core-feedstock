@@ -1,6 +1,6 @@
 {% set name = "yaqd-core" %}
-{% set version = "0.3.1" %}
-{% set sha256 = "2d40037fb0506294cc82f879ffe0baeb7ed1c3c96572f6587e2e920ecd261fc3" %}
+{% set version = "0.5.0" %}
+{% set sha256 = "029745ae3965727924f4f8faf2ac8f118621451f64fc13e348a2769f28ae08c4" %}
 
 package:
   name: {{ name|lower }}
@@ -16,6 +16,7 @@ build:
   script: "{{ PYTHON }} -m pip install . -vv"
   entry_points:
     - yaqd-base=yaqd_core._daemon:Base.main
+    - yaqd-sensor=yaqd_core._sensor:Sensor.main
     - yaqd-hardware=yaqd_core._hardware._base:Hardware.main
     - yaqd-continuous-hardware=yaqd_core._hardware._continuous:ContinuousHardware.main
 
@@ -23,7 +24,6 @@ requirements:
   host:
     - python >=3.7
     - pip
-    - pytest-runner
   run:
     - python >=3.7
     - appdirs
@@ -34,6 +34,7 @@ test:
     - yaqd_core
   commands:
     - yaqd-base -h
+    - yaqd-sensor -h
     - yaqd-hardware -h
     - yaqd-continuous-hardware -h
 

@@ -1,6 +1,6 @@
 {% set name = "yaqd-core" %}
-{% set version = "0.5.0" %}
-{% set sha256 = "029745ae3965727924f4f8faf2ac8f118621451f64fc13e348a2769f28ae08c4" %}
+{% set version = "0.6.0" %}
+{% set sha256 = "9000b000573f495c3a4012cb7c312c2e0fbd47500493739af75c372555e9553e" %}
 
 package:
   name: {{ name|lower }}
@@ -13,10 +13,8 @@ source:
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   entry_points:
-    - yaqd-base=yaqd_core._daemon:Base.main
-    - yaqd-sensor=yaqd_core._sensor:Sensor.main
     - yaqd-hardware=yaqd_core._hardware._base:Hardware.main
     - yaqd-continuous-hardware=yaqd_core._hardware._continuous:ContinuousHardware.main
 
@@ -33,8 +31,6 @@ test:
   imports:
     - yaqd_core
   commands:
-    - yaqd-base -h
-    - yaqd-sensor -h
     - yaqd-hardware -h
     - yaqd-continuous-hardware -h
 
@@ -44,7 +40,7 @@ about:
   license: LGPL-3.0-only
   license_family: LGPL
   license_file: LICENSE
-  summary: Core python package for implementing yaq deamons, and associated utilities.  
+  summary: Core python package for implementing yaq deamons, and associated utilities.
 
 extra:
   recipe-maintainers:

@@ -1,6 +1,6 @@
 {% set name = "yaqd-core" %}
-{% set version = "0.6.0" %}
-{% set sha256 = "9000b000573f495c3a4012cb7c312c2e0fbd47500493739af75c372555e9553e" %}
+{% set version = "0.7.0" %}
+{% set sha256 = "3b173651b44b3d9452389ceac9a5d7669c14f446792ca566b10bbd6a0ffaa1a8" %}
 
 package:
   name: {{ name|lower }}
@@ -26,6 +26,7 @@ requirements:
     - python >=3.7
     - appdirs
     - toml
+    - msgpack-python
 
 test:
   imports:

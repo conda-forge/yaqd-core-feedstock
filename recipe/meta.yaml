@@ -1,6 +1,6 @@
 {% set name = "yaqd-core" %}
-{% set version = "0.7.0" %}
-{% set sha256 = "3b173651b44b3d9452389ceac9a5d7669c14f446792ca566b10bbd6a0ffaa1a8" %}
+{% set version = "2020.5.0" %}
+{% set sha256 = "019d82106aa019b788eaf414605821595ca7fa4a56afc047315761246c950109" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - yaqd-hardware=yaqd_core._hardware._base:Hardware.main

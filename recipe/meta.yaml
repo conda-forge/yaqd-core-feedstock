@@ -23,6 +23,7 @@ requirements:
     - python >=3.7
     - appdirs
     - toml
+    - setuptools 
     - fastavro
 
 test:

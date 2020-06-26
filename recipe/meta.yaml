@@ -1,6 +1,6 @@
 {% set name = "yaqd-core" %}
-{% set version = "2020.6.1" %}
-{% set sha256 = "af9f4b4524e3ef565aa0db49c61bc21d5f95b33c672322fc166e4b9aa15c449b" %}
+{% set version = "2020.6.2" %}
+{% set sha256 = "eba8464bbe67cd8f33709d12e8e5a7c56a88bdbf1fbb5ca9a75e28f4b2a92761" %}
 
 package:
   name: {{ name|lower }}
@@ -14,9 +14,6 @@ build:
   noarch: python
   number: 0
   script: {{ PYTHON }} -m pip install . -vv
-  entry_points:
-    - yaqd-hardware=yaqd_core._hardware._base:Hardware.main
-    - yaqd-continuous-hardware=yaqd_core._hardware._continuous:ContinuousHardware.main
 
 requirements:
   host:
@@ -26,14 +23,12 @@ requirements:
     - python >=3.7
     - appdirs
     - toml
-    - msgpack-python >=1.0.0
+    - setuptools 
+    - fastavro
 
 test:
   imports:
     - yaqd_core
-  commands:
-    - yaqd-hardware -h
-    - yaqd-continuous-hardware -h
 
 about:
   home: https://yaq.fyi

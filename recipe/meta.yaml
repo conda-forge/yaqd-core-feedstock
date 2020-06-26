@@ -14,9 +14,6 @@ build:
   noarch: python
   number: 0
   script: {{ PYTHON }} -m pip install . -vv
-  entry_points:
-    - yaqd-hardware=yaqd_core._hardware._base:Hardware.main
-    - yaqd-continuous-hardware=yaqd_core._hardware._continuous:ContinuousHardware.main
 
 requirements:
   host:
@@ -31,9 +28,6 @@ requirements:
 test:
   imports:
     - yaqd_core
-  commands:
-    - yaqd-hardware -h
-    - yaqd-continuous-hardware -h
 
 about:
   home: https://yaq.fyi

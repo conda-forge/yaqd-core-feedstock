@@ -17,13 +17,16 @@ build:
 
 requirements:
   host:
+    - appdirs
+    - toml
+    - fastavro
+    - flit
     - python >=3.7
     - pip
   run:
     - python >=3.7
     - appdirs
     - toml
-    - setuptools
     - fastavro
 
 test:

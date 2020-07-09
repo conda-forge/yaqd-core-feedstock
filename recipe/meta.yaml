@@ -1,6 +1,6 @@
 {% set name = "yaqd-core" %}
-{% set version = "2020.7.1" %}
-{% set sha256 = "ee88600e74f3cb1c59b82ab961eefcc92885b6bf8749dc51a4ce745ab02759ae" %}
+{% set version = "2020.7.2" %}
+{% set sha256 = "0fab5f66103b8ff49c5c3f52d91d16fbc3fe759293d18159e68e16d312c08207" %}
 
 package:
   name: {{ name|lower }}
@@ -35,7 +35,7 @@ test:
 
 about:
   home: https://yaq.fyi
-  dev_url: https://gitlab.com/yaq/yaqd-core-python
+  dev_url: https://gitlab.com/yaq/yaq-python
   license: LGPL-3.0-only
   license_family: LGPL
   license_file: LICENSE

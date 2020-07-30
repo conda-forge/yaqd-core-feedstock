@@ -19,7 +19,7 @@ requirements:
   host:
     - appdirs
     - toml
-    - fastavro>=0.24.0
+    - fastavro >=0.24.0
     - flit
     - python >=3.7
     - pip
@@ -27,7 +27,7 @@ requirements:
     - python >=3.7
     - appdirs
     - toml
-    - fastavro>=0.24.0
+    - fastavro >=0.24.0
 
 test:
   imports:

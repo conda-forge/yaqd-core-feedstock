@@ -21,7 +21,7 @@ requirements:
     - toml
     - fastavro >=1.4.0
     - flit ==3.1.0
-    - flit_core == 3.1.0
+    - flit_core ==3.1.0
     - python >=3.7
     - pip
   run:

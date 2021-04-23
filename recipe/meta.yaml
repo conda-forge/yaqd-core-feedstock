@@ -13,14 +13,15 @@ source:
 build:
   noarch: python
   number: 0
-  script: flit install --deps none
+  script: {{python}} -m pip install . -vv
 
 requirements:
   host:
     - appdirs
     - toml
     - fastavro >=1.4.0
-    - flit
+    - flit ==3.1.0
+    - flit_core == 3.1.0
     - python >=3.7
     - pip
   run:

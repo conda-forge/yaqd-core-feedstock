@@ -13,7 +13,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: flit install
+  script: flit install --deps none
 
 requirements:
   host:

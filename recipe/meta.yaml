@@ -1,6 +1,6 @@
 {% set name = "yaqd-core" %}
-{% set version = "2021.3.0" %}
-{% set sha256 = "cca4c220fcef5d7c1ded40f0dbf828855c5bc3ee9c5d88369ff56f4b05e75e5d" %}
+{% set version = "2021.4.0" %}
+{% set sha256 = "fa12b2e64f938476d5586565c270b3854691a517f9c921c347a007501a24ce85" %}
 
 package:
   name: {{ name|lower }}
@@ -19,15 +19,15 @@ requirements:
   host:
     - appdirs
     - toml
-    - fastavro >=0.24.0
-    - flit
+    - fastavro >=1.4.0
+    - flit ==3.1.0
     - python >=3.7
     - pip
   run:
     - python >=3.7
     - appdirs
     - toml
-    - fastavro >=0.24.0
+    - fastavro >=1.4.0
 
 test:
   imports:

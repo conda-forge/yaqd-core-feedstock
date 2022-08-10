@@ -1,6 +1,6 @@
 {% set name = "yaqd-core" %}
-{% set version = "2022.7.0" %}
-{% set sha256 = "8337c3170cbe4fc617379c6bfb3ca639ca7ca28611e8b072d951539d83a60570" %}
+{% set version = "2022.8.0" %}
+{% set sha256 = "3b5fb979693d34ae56b04551d4786dc2cc6934d0bf5c22852939fefa49ca2572" %}
 
 package:
   name: {{ name|lower }}

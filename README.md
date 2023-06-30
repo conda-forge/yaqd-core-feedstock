@@ -1,11 +1,11 @@
-About yaqd-core
-===============
+About yaqd-core-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/yaqd-core-feedstock/blob/main/LICENSE.txt)
 
 Home: https://yaq.fyi
 
 Package license: LGPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/yaqd-core-feedstock/blob/main/LICENSE.txt)
 
 Summary: Core python package for implementing yaq deamons, and associated utilities.
 

@@ -1,13 +1,13 @@
 {% set name = "yaqd-core" %}
-{% set version = "2023.2.0" %}
-{% set sha256 = "7299bb3aff44278f3af910f9458b4817101715f715165ed69bd2d8aa9c413f5f" %}
+{% set version = "2023.6.0" %}
+{% set sha256 = "5f77e76a95f8babd28d30d3107712caaad3968ff7aa30bd564f657fe61388483" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:

@@ -17,11 +17,7 @@ build:
 
 requirements:
   host:
-    - appdirs
-    - tomli
-    - tomli-w
-    - fastavro >=1.4.0
-    - flit ==3.1.0
+    - hatchling
     - python >=3.7
     - pip
   run:

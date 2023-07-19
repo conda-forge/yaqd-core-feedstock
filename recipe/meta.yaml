@@ -22,7 +22,7 @@ requirements:
     - pip
   run:
     - python >=3.7
-    - appdirs
+    - platformdirs
     - tomli
     - tomli-w
     - fastavro >=1.4.0

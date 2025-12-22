@@ -1,6 +1,6 @@
 {% set name = "yaqd-core" %}
-{% set version = "2023.11.0" %}
-{% set sha256 = "33105848e87385cbb21395f6a64f6cfff2424f6a6e57e553a1fa6cfbe0b2482d" %}
+{% set version = "2025.12.0" %}
+{% set sha256 = "84e5cfdb5b471bed64b346d7a5029b26d8116a48d36004006fa9a51786980653" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
